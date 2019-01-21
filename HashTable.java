@@ -1,29 +1,5 @@
 import java.util.*;
 
-class Hash
-{
-    public static void main (String[] args)
-    {
-      HashTable ht = new HashTable(2);
-      ht.probe("first", "steve");
-      ht.probe("last", "frank");
-      ht.probe("city", "new york city");
-      ht.chain("state", "NY");
-      ht.chain("zip", "daniel");
-      ht.toString();
-      System.out.println("size: " + ht.size() + " count: " + ht.count() + "\n");
-
-      ht.chain("first", "franco");
-      ht.chain("state", "NJ");
-      ht.chain("country", "u.s.");
-      ht.toString();
-      System.out.println("size: " + ht.size() + " count: " + ht.count());
-      System.out.println("\nGet: state=" + ht.get("state") + "\n");
-
-    }
-
-}
-
 /*
   Node used to represent a piece of data
 */

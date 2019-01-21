@@ -19,20 +19,7 @@ class LinkedList {
 
   static Node head;
 
-  public static void main (String[] args)
-  {
-    LinkedList ll = new LinkedList();
-    ll.append(1);
-    ll.append(4);
-    ll.append(2);
-    ll.remove(1);
-    ll.reverse();
-    ll.toString();
-  //  int i = 1;
-  //  System.out.println("Get index " + i + ": " + ll.get(i));
-  }
-
-  public static void reverse ()
+  public void reverse ()
   {
       // prev and next are in a null space
        Node prev = null;

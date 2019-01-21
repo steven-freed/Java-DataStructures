@@ -21,41 +21,6 @@ class Tree {
 
   static Node root;
 
-  public static void main (String[] args)
-  {
-    Tree t = new Tree();
-
-    /*
-    Binary Search Tree creation
-    */
-    t.iterativeInsert(3);
-    t.iterativeInsert(4);
-    t.iterativeInsert(45);
-    t.iterativeInsert(4);
-    t.iterativeInsert(99);
-    t.iterativeInsert(7);
-
-
-    /*
-      Binary Tree creation
-
-    t.root = new Node(2);
-    t.root.left = new Node(1);
-    t.root.right = new Node(5);
-    t.root.left.left = new Node(4);
-    t.root.left.right = new Node(3);
-    */
-
-  //  System.out.println("Count: " + t.count());
-
-    //t.inOrder(root);
-
-    if (t.find(4) == true)
-      System.out.println("found!");
-    else
-      System.out.println("not found");
-  }
-
   /*
     Count of Binary Search Tree & Binary Tree Nodes
   */
